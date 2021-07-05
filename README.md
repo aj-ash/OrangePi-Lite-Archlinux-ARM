@@ -17,11 +17,11 @@
 ### 如何定制/编译 boot-srcipt？
 
 1. 进入 boot-srcipt 目录
-    ``cd source/boot-script/``
+    + ``cd source/boot-script/``
 2. 根据自己的需求修改 boot.cmd 代码
-    ``vim boot.cmd``
+    + ``vim boot.cmd``
 3. 生成镜像
-    ``mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "Orange Pi Lite boot script" -d boot.cmd boot.scr``
+    + ``mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "Orange Pi Lite boot script" -d boot.cmd boot.scr``
 
 **注：**
 
@@ -30,13 +30,13 @@
 ### 如何定制/编译 u-boot 镜像？
 
 1. 克隆 u-boot 仓库
-    ``git clone https://gitlab.denx.de/u-boot/u-boot.git``
+    + ``git clone https://gitlab.denx.de/u-boot/u-boot.git``
 2. 根据自己的需求修改代码
 2. 编译
-    ``make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi- orangepi_lite_defconfig``
-    ``make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi-``
+    + ``make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi- orangepi_lite_defconfig``
+    + ``make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi-``
 3. 写入镜像
-    ``sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdX bs=1024 seek=8``
+    + ``sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdX bs=1024 seek=8``
 
 **注：**
 
