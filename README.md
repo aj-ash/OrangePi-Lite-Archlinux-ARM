@@ -6,7 +6,7 @@
 
 | Stable   | RC           | Git       |
 |:---------|:-------------|:----------|
-| v2021.04 | v2021.07-rc5 | @a7bdd2dd |
+| v2021.04 | v2021.07-rc5 | @eae8c7c3 |
 
 ## 使用
 
@@ -30,7 +30,7 @@
 ### 如何定制/编译 u-boot 镜像？
 
 1. 克隆 u-boot 仓库
-    + ``git clone https://gitlab.denx.de/u-boot/u-boot.git``
+    + ``git clone https://github.com/u-boot/u-boot.git``
 2. 根据自己的需求修改代码
 2. 编译
     + ``make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi- orangepi_lite_defconfig``
