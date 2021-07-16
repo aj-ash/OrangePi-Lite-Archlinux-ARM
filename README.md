@@ -1,4 +1,4 @@
-# orangepi-lite-archlinux-arm
+# OrangePi-Lite-UBoot
 
 本仓库提供了 boot-script 和 u-boot 的源码和已编译的镜像文件。
 
@@ -6,11 +6,13 @@
 
 | Stable   | RC           | Git       |
 |:---------|:-------------|:----------|
-| v2021.04 | v2021.07-rc5 | @eae8c7c3 |
+| v2021.04 | v2021.07-rc5 | @d3fc3da9 |
 
 ## 使用
 
-此处不提供使用教程，默认你知道如何使用。
+本仓库默认不提供使用教程，详细教程见 [OrangePi-Lite-Archlinux-ARM]。
+
+[OrangePi-Lite-Archlinux-ARM]: https://github.com/aj-ash/OrangePi-Lite-Archlinux-ARM
 
 ## F.A.Q
 
@@ -29,8 +31,8 @@
 
 ### 如何定制/编译 u-boot 镜像？
 
-1. 克隆 u-boot 仓库
-    + ``git clone https://github.com/u-boot/u-boot.git``
+1. 进入 u-boot 目录
+    + ``cd source/u-boot/``
 2. 根据自己的需求修改代码
 2. 编译
     + ``make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi- orangepi_lite_defconfig``
