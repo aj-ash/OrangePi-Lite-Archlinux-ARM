@@ -1,18 +1,16 @@
 # OrangePi-Lite-UBoot
 
-本仓库提供了 boot-script 和 u-boot 的源码和已编译的镜像文件。
+本仓库提供了适用于 Orange Pi Lite 的 boot-script 和 u-boot 的源码和已编译的镜像文件。
 
 其中 u-boot 提供了三个不同版本的镜像文件。
 
 | Stable   | RC           | Git       |
 |:---------|:-------------|:----------|
-| v2021.07 | v2021.07-rc5 | @ec22c365 |
+| v2021.07 | v2021.07-rc5 | @3823315c |
 
 ## 使用
 
-本仓库默认不提供使用教程，详细教程见 [OrangePi-Lite-Archlinux-ARM]。
-
-[OrangePi-Lite-Archlinux-ARM]: https://github.com/aj-ash/OrangePi-Lite-Archlinux-ARM
+本仓库默认不提供使用教程。
 
 ## F.A.Q
 
