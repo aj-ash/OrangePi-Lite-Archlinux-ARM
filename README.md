@@ -6,7 +6,7 @@
 
 | Stable   | RC           | Git       |
 |:---------|:-------------|:----------|
-| v2022.07 | v2022.07-rc6 | @26f6f7fb |
+| v2022.07 | v2022.10-rc1 | @26f6f7fb |
 
 ## 使用
 
@@ -21,7 +21,7 @@
 2. 根据自己的需求修改 boot.cmd 代码
     + `vim boot.cmd`
 3. 生成镜像
-    + `mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "Orange Pi Lite boot script" -d boot.cmd boot.scr`
+    + `mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "OrangePi-Lite Boot Script" -d boot.cmd boot.scr`
 
 **注：**
 
