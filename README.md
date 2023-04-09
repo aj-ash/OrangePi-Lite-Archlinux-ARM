@@ -1,12 +1,15 @@
 # OrangePi-Lite-UBoot
 
-本仓库提供了适用于 Orange Pi Lite 的 boot-script 和 u-boot 的源码和已编译的镜像文件。
+本仓库提供了适用于 Orange Pi Lite 的 boot-script / u-boot 的源码和已编译的镜像文件。
 
 其中 u-boot 提供了三个不同版本的镜像文件。
 
-| Stable   | RC           | Git       |
-|:---------|:-------------|:----------|
-| v2022.10 | v2023.01-rc1 | @0cbeed4f |
+| Stable           | RC           | Git       |
+|:-----------------|:-------------|:----------|
+| [下载 Stable 版] | [下载 RC 版] | @0cbeed4f |
+
+[下载 Stable 版]: binary/u-boot/Stable
+[下载 RC 版]: binary/u-boot/RC
 
 ## 使用
 
