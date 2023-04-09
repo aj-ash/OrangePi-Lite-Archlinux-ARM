@@ -6,14 +6,22 @@
 
 | Stable           | RC           | Git       |
 |:-----------------|:-------------|:----------|
-| [下载 Stable 版] | [下载 RC 版] | @0cbeed4f |
+| [下载 Stable 版] | [下载 RC 版] | @fa6f458c |
 
 [下载 Stable 版]: binary/u-boot/Stable
 [下载 RC 版]: binary/u-boot/RC
 
 ## 使用
 
-本仓库默认不提供使用文档。
+### Boot Srcipt
+
+0. 将对应的内存卡通过读卡器插入电脑设备
+1. 挂载: `mount /dev/sdX /mnt`
+2. 复制: `cp boot.scr /mnt/boot/`
+
+### U-Boot
+
++ 写入: `sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdX bs=1024 seek=8`
 
 ## F.A.Q
 
@@ -28,7 +36,9 @@
 
 **注：**
 
-使用 `mkimage` 命令需系统已安装 **uboot-tools** 软件包。
+使用 `mkimage` 命令需系统已安装 [uboot-tools] 软件包。
+
+[uboot-tools]: https://archlinux.org/packages/community/x86_64/uboot-tools/
 
 ### 如何定制/编译 u-boot 镜像？
 
@@ -38,13 +48,11 @@
 2. 编译
     + `make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi- orangepi_lite_defconfig`
     + `make -j16 ARCH=arm CROSS_COMPILE=arm-none-eabi-`
-3. 写入镜像
-    + `sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdX bs=1024 seek=8`
 
 **注：**
 
 编译需系统已安装 [arm-none-eabi-gcc]、[dtc]、[swig] 软件包。
 
-[arm-none-eabi-gcc]: https://gcc.gnu.org
-[dtc]: https://www.devicetree.org
-[swig]: http://www.swig.org
+[arm-none-eabi-gcc]: https://archlinux.org/packages/community/x86_64/arm-none-eabi-gcc/
+[dtc]: https://archlinux.org/packages/community-staging/x86_64/dtc/
+[swig]: https://archlinux.org/packages/staging/x86_64/swig/
