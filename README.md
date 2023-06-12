@@ -1,5 +1,7 @@
 # OrangePi-Lite-UBoot
 
+![OrangePi-Lite](.docs/img/logo.png)
+
 本仓库提供了适用于 Orange Pi Lite 的 boot-script / u-boot 的源码和已编译的镜像文件。
 
 其中 u-boot 提供了三个不同版本的镜像文件。
